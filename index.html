@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>男気割り勘電卓</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="top-container">
+      <h2>男気はつらいよ割り勘電卓</h2>
+      <img src="komatta_man2.png" alt="" class="top-pic">
+    </div>
+    <div class="container">
+      <div class="input-area">
+        <input type="text" id="price" placeholder="金額">
+        <input type="text" id="num" placeholder="男性の数">
+        <select id="unit">
+          <option value="100" selected>100円単位</option>
+          <option value="1000">1000円単位</option>
+        </select>
+        <div id="btn" class ="disabled">計算</div>
+      </div>
+      <div class="result-area">
+        <p id="result">ここに結果を表示します</p>
+        <div id="reset" class="hidden">もう一度計算する？</div>
+      </div>
+      <div class="discription">
+        <h3>男たるもの会計時には男気をみせるべし</h3>
+        <ul>
+          <li>女性には全員で1000円以下の端数を協力してもらう。</li>
+          <li>端数を引いた残りを男子で割り勘。</li>
+          <li>割り勘の単位は100円単位か1000円単位か選べる。</li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
