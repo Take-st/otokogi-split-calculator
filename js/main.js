@@ -31,6 +31,12 @@
     if(this.classList.contains("disabled")){
       return;
     }
+    if(price.value < 1000){
+      str = "今回は安いから、男たちでジャン負けが払おう！"
+      result.textContent = str;
+      reset.classList.remove("hidden");
+      return;
+    }
     fraction = price.value - (Math.floor(price.value / 1000)) * 1000;
     // 端数の計算
     // 5500/1000 5.5 5  5000 500
